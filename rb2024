@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #9fa860;
+      color: #9fa860;
+    }
+    header {
+      background:#ffffff;
+      padding: 1em;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+    header img {
+      max-height: 100px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2em;
+      background: white;
+    }
+    .title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 1em;
+      color: #9fa860;
+    }
+    .wine-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2em;
+    }
+    .wine-image img {
+      max-width: 250px;
+    }
+    .product-info {
+  background-color: #f9f9f9;
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;   
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .product-info h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #9fa860;
+  text-align: center;
+    }
+
+    .product-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    }
+
+.product-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #9fa860;
+    }
+
+.product-info li strong {
+  color: #9fa860;
+    }
+
+    .section {
+      margin-bottom: 2em;
+    }
+    .section h2 {
+      font-size: 1.2em;
+      color: #9fa860;
+    }
+    .nutritional-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .nutritional-table td, .nutritional-table th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    .nutritional-table ul.subpoint {
+      list-style-type: disc;
+      margin: 4px 0 0 20px;
+      padding: 0;
+}
+    .nutritional-table ul.subpoint li {
+      font-size: 0.9em;
+      font-style: italic;
+      color: #9fa860;
+      margin: 0;
+}
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #9fa860;
+      margin-top: 2em;
+    }
+    .lang-selector {
+      text-align: right;
+      margin-bottom: 1em;
+    }
+    .lang-selector select {
+      padding: 5px;
+    }
+    .consumo-responsavel {
+      margin-top: 2em;
+      text-align: center;
+    }
+    .consumo-responsavel img {
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Inserir logotipo da Quinta do Cume -->
+    <a href="https://www.quintadocume.pt" target="_blank">
+      <img src="logotipo.png" alt="Quinta do Cume Logo" />
+    </a>
+  </header>
+
+  <div class="container">
+    <div class="lang-selector">
+      <label for="lang">Idioma:</label>
+      <select id="lang">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+      </select>
+    </div>
+
+    <h1 id="titulo-vinho">Reserva Branco 2024</h1>
+
+    <div class="wine-image">
+      <!-- Inserir imagem da garrafa -->
+      <img src="garrafa.png" alt="Imagem da Garrafa" />
+    </div>
+
+    <div class="product-info">
+  <h2 id="info-produto-title">Informação do Produto</h2>
+  <ul>
+    <li><strong id="label-tipo-produto">Tipo de produto:</strong> <span id="valor-tipo-produto">Vinho</span></li>
+    <li><strong id="label-alcool">álc.:</strong> <span id="valor-alcool">13% vol</span></li>
+    <li><strong id="label-ano-vintage">Ano vintage:</strong> <span id="valor-ano-vintage">2024</span></li>
+    <li><strong id="label-teor-acucar">Teor de açúcar:</strong> <span id="valor-teor-acucar">Seco</span></li>
+    <li><strong id="label-cor-vinho">Cor do vinho:</strong> <span id="valor-cor-vinho">Vinho Branco</span></li>
+  </ul>
+</div>
+    
+   <section id="ingredientes">
+  <h2 id="ingredientes-titulo">Ingredientes</h2>
+  <ul>
+    <li id="ingrediente-uvas">Uvas: Malvasia Fina, Rabigato, Viosinho e Gouveio</li>
+    <li id="ingrediente-sulfitos">Sulfitos (dióxido de enxofre)</li>
+  </ul>
+</section>
+
+    <div class="section" id="nutricao">
+  <h2 id="nutricao-titulo">Declaração Nutricional (por 100 ml)</h2>
+        <table class="nutritional-table">
+  <tr>
+    <td id="labelenergia">Valor energético</td>
+    <td>323 kJ / 77 kcal</td>
+  </tr>
+  <tr>
+    <td id="labellipidos">
+    Lípidos
+    <ul class="subpoint">
+      <li id="labelgordurasat">das quais saturadas</li>
+    </ul>
+  </td>
+  <td>0 g<br>0 g</td>
+</tr>
+  <tr>
+    <td id="labelhidratos">
+      Hidratos de carbono
+      <ul class="subpoint">
+        <li id="labelacucares">dos quais açúcares</li>
+      </ul>
+    </td>
+    <td>0,7 g<br>&lt; 0,1 g</td>
+  </tr>
+  <tr>
+    <td id="labelproteinas">Proteínas</td>
+    <td>&lt; 0,1 g</td>
+  </tr>
+  <tr>
+    <td id="labelsal">Sal</td>
+    <td>&lt; 0,01 g</td>
+  </tr>
+</table>
+    </div>
+
+    <div class="consumo-responsavel">
+      <!-- Inserir imagem de consumo responsável -->
+      <img src="consumo_responsavel.png" alt="Consumo Responsável" />
+    </div>
+
+    <div class="footer">
+      Produzido e engarrafado por Quinta do Cume
+    </div>
+  </div>
+
+  <script>
+    const translations = {
+  pt: {
+    tituloVinho: "Branco 2024",
+    ingredientesTitulo: "Ingredientes",
+    ingredienteUvas: "Uvas: Malvasia Fina, Rabigato, Viosinho e Gouveio",
+    ingredienteSulfitos: "Sulfitos (dióxido de enxofre)",
+    infoProdutoTitle: "Informação do Produto",
+    labelTipoProduto: "Tipo de produto:",
+    valorTipoProduto: "Vinho",
+    labelAlcool: "álc.:",
+    valorAlcool: "13.5% vol",
+    labelAnoVintage: "Ano vintage:",
+    valorAnoVintage: "2024",
+    labelTeorAcucar: "Teor de açúcar:",
+    valorTeorAcucar: "Seco",
+    labelCorVinho: "Cor do vinho:",
+    valorCorVinho: "Vinho Branco",
+    nutricaoTitulo: "Declaração Nutricional (por 100 ml):",
+    labelEnergia: "Valor energético",
+    labelLipidos: "Lípidos",
+    labelGorduraSat: "das quais saturadas",
+    labelHidratos: "Hidratos de carbono",
+    labelAcucares: "dos quais açúcares",
+    labelProteinas: "Proteínas",
+    labelSal: "Sal"
+    footer: "Produzido e engarrafado por Quinta do Cume"
+  },
+  en: {
+   tituloVinho: "White 2024",
+    ingredientesTitulo: "Ingredients",
+    ingredienteUvas: "Grapes: Malvasia Fina, Rabigato, Viosinho and Gouveio",
+    ingredienteSulfitos: "Sulfites (sulfur dioxide)",
+    infoProdutoTitle: "Product Information",
+    labelTipoProduto: "Product type:",
+    valorTipoProduto: "Wine",
+    labelAlcool: "alc.:",
+    valorAlcool: "13.5% vol",
+    labelAnoVintage: "Vintage year:",
+    valorAnoVintage: "2024",
+    labelTeorAcucar: "Sugar level:",
+    valorTeorAcucar: "Dry",
+    labelCorVinho: "Wine color:",
+    valorCorVinho: "White Wine",
+    nutricaoTitulo: "Nutritional Information (per 100 ml):",
+    labelEnergia: "Energy value",
+    labelLipidos: "Lipids",
+    labelGorduraSat: "of which saturates",
+    labelHidratos: "Carbohydrates",
+    labelAcucares: "of which sugars",
+    labelProteinas: "Proteins",
+    labelSal: "Salt"
+    footer: "Produced and bottled by Quinta do Cume"
+  },
+  fr: {
+    tituloVinho: "Blanc 2024",
+    ingredientesTitulo: "Ingrédients",
+    ingredienteUvas: "Raisins : Malvasia Fina, Rabigato, Viosinho et Gouveio",
+    ingredienteSulfitos: "Sulfites (dioxyde de soufre)",
+    infoProdutoTitle: "Informations sur le produit",
+    labelTipoProduto: "Type de produit:",
+    valorTipoProduto: "Vin",
+    labelAlcool: "alc.:",
+    valorAlcool: "13.5% vol",
+    labelAnoVintage: "Millésime:",
+    valorAnoVintage: "2024",
+    labelTeorAcucar: "Teneur en sucre:",
+    valorTeorAcucar: "Sec",
+    labelCorVinho: "Couleur du vin:",
+    valorCorVinho: "Vin blanc",
+    nutricaoTitulo: "Déclaration Nutritionnelle (pour 100 ml):",
+    labelEnergia: "Valeur énergétique",
+    labelLipidos: "Lipides",
+    labelGorduraSat: "dont saturés",
+    labelHidratos: "Glucides",
+    labelAcucares: "dont sucres",
+    labelProteinas: "Protéines",
+    labelSal: "Sel"
+    footer: "Produit et embouteillé par Quinta do Cume"
+  },
+  de: {
+     tituloVinho: "Weiß 2024",
+    ingredientesTitulo: "Zutaten",
+    ingredienteUvas: "Trauben: Uvas: Malvasia Fina, Rabigato, Viosinho und Gouveio",
+    ingredienteSulfitos: "Sulfite (Schwefeldioxid)",
+    infoProdutoTitle: "Produktinformationen",
+    labelTipoProduto: "Produkttyp:",
+    valorTipoProduto: "Wein",
+    labelAlcool: "alc.:",
+    valorAlcool: "13,5% vol",
+    labelAnoVintage: "Jahrgang:",
+    valorAnoVintage: "2024",
+    labelTeorAcucar: "Zuckergehalt:",
+    valorTeorAcucar: "Trocken",
+    labelCorVinho: "Weinfarbe:",
+    valorCorVinho: "Weißwein",
+    nutricaoTitulo: "Nährwertangaben (pro 100 ml):",
+    labelEnergia: "Energiegehalt",
+    labelLipidos: "Lipide",
+    labelGorduraSat: "davon gesättigte Fettsäuren",
+    labelHidratos: "Kohlenhydrate",
+    labelAcucares: "davon Zucker",
+    labelProteinas: "Proteine",
+    labelSal: "Salz"
+    footer: "Hergestellt und abgefüllt von Quinta do Cume"
+  }
+};
+   document.getElementById("lang").addEventListener("change", function () {
+  const lang = this.value;
+  document.getElementById("titulo-vinho").textContent = translations[lang].tituloVinho;
+  document.getElementById("ingredientes-titulo").textContent = translations[lang].ingredientesTitulo;
+  document.getElementById("nutricao-titulo").textContent = translations[lang].nutricaoTitulo;
+  document.querySelector(".footer").textContent = translations[lang].footer;
+  document.getElementById("info-produto-title").textContent = translations[lang].infoProdutoTitle;
+  document.getElementById("label-tipo-produto").textContent = translations[lang].labelTipoProduto;
+  document.getElementById("valor-tipo-produto").textContent = translations[lang].valorTipoProduto;
+  document.getElementById("label-alcool").textContent = translations[lang].labelAlcool;
+  document.getElementById("valor-alcool").textContent = translations[lang].valorAlcool;
+  document.getElementById("label-ano-vintage").textContent = translations[lang].labelAnoVintage;
+  document.getElementById("valor-ano-vintage").textContent = translations[lang].valorAnoVintage;
+  document.getElementById("label-teor-acucar").textContent = translations[lang].labelTeorAcucar;
+  document.getElementById("valor-teor-acucar").textContent = translations[lang].valorTeorAcucar;
+  document.getElementById("label-cor-vinho").textContent = translations[lang].labelCorVinho;
+  document.getElementById("valor-cor-vinho").textContent = translations[lang].valorCorVinho;
+  document.querySelector("#ingredientes h2").textContent = translations[lang].ingredientesTitulo;
+  document.getElementById("ingrediente-uvas").textContent = translations[lang].ingredienteUvas;
+  document.getElementById("ingrediente-sulfitos").textContent = translations[lang].ingredienteSulfitos;
+
+  document.getElementById("nutricaotitulo").textContent = translations[lang].nutricaoTitulo;
+  document.getElementById("labelenergia").textContent = translations[lang].labelEnergia;
+  document.getElementById("labellipidos").childNodes[0].nodeValue = translations[lang].labelLipidos + "\n";
+  document.getElementById("labelgordurasat").textContent = translations[lang].labelGorduraSat;
+  document.getElementById("labelhidratos").childNodes[0].nodeValue = translations[lang].labelHidratos + "\n";
+  document.getElementById("labelacucares").textContent = translations[lang].labelAcucares;
+  document.getElementById("labelproteinas").textContent = translations[lang].labelProteinas;
+  document.getElementById("labelsal").textContent = translations[lang].labelSal;
+  document.querySelector(".footer").textContent = translations[lang].footer;
+});
+  </script>
+
+</body>
+</html>
